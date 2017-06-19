@@ -1,0 +1,80 @@
+/*
+ * socialpopup.SocialPopups
+ */
+
+(function() {
+  setShareLinks();
+
+  function setShareLinks() {
+      var pageUrl = encodeURIComponent(location.href);
+      var pageTitle = encodeURIComponent(document.title);
+
+      var firstImg = document.getElementsByTagName("img")[0];
+      if ( !!firstImg) firstImg=firstImg.getAttribute("src");
+
+      var description = document.querySelector("meta[name='description']");
+      if (!!description) {
+        description=description.getAttribute("content");
+      } else {
+        description="";
+      }
+      var description = encodeURIComponent(description);
+
+      var app_id = document.querySelector("meta[property='fb:app_id']");
+      if (!!app_id) app_id=app_id.getAttribute("content");
+
+      var via = document.querySelector("meta[property='twitter:site']");
+      if (!!via ) via=via.getAttribute("content")||"";
+
+      var hashtags = [];
+      var htags = document.querySelectorAll("meta[property='article:tag']");
+      for (var i=0; i<htags.length; i++) {
+        hashtags = hashtags.push(hashish(htags[i].getAttribute("content")))
+      }
+
+    {{#each popups}}
+      elements = document.querySelectorAll(".{{@root.class}}.{{class}}");
+      Array.prototype.forEach.call(elements, function(el) {
+          el.addEventListener("click", function() {
+              url  = "{{protocol}}//{{host}}{{pathname}}?"
+              {{#if query}}
+              url += "{{{query}}}";
+              {{/if}}
+              {{#if pUrl}}
+              url += '&{{pUrl}}='+pageUrl;
+              {{/if}}
+              {{#if pTitle}}
+              url += '&{{pTitle}}='+pageTitle;
+              {{/if}}
+              {{#if pDesc}}
+              url += '&{{pDesc}}='+description;
+              {{/if}}
+              {{#if pImg}}
+              url += '&{{pImg}}='+firstImg;
+              {{/if}}
+              {{#if app_id}}
+              if (app_id) url +='&{{app_id}}='+app_id;
+              {{/if}}
+              {{#if pVia}}
+              if (via) url +='&{{pVia}}='+via;
+              {{/if}}
+              {{#if pHashTags}}
+              if (!!hashtags) url += '&{{pHashTags}}='+hashtags;
+              {{/if}}
+              socialWindow(url);
+          });
+      });
+    {{/each}}
+  };
+
+  function hashish(str) {
+    return '#'+str.split(' ').join('').toLowerCase();
+  };
+
+  function socialWindow(url) {
+      var left = (screen.width - {{@root.width}}) / 2;
+      var top = (screen.height - {{@root.height}}) / 2;
+      var params = "menubar=no,toolbar=no,status=no,width={{@root.width}},height={{@root.height}},top=" + top + ",left=" + left;
+      window.open(url,"NewWindow",params);
+  };
+}).call(this);

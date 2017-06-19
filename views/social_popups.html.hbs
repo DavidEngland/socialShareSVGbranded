@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Social Sharing Popups</title>
+  <link href="https://maxcdn.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+  <link href="../dist/social_popups.css" rel="stylesheet">
+  <meta name="description" conente="Social sharing without plugins">
+  <meta property="fb:app_id" content="00">
+</head>
+
+<body>
+<div class="container">
+  <div class="row-fluid">
+    <div class="span12">
+      <div class="btn-toolbar">
+        {{#each popups}}
+          <div class="btn-group">
+            <a class="btn {{@root.class}} {{class}}" title="{{preamble}} {{name}}" href="javascript:void(0)">
+              <i class="{{@root.prefix}}{{class}}"></i>
+            </a>
+          </div>
+         {{/each}}
+        <div class="btn-group">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="social_popups.js">
+</script>
+</body>
+</html>

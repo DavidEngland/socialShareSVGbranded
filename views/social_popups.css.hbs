@@ -1,0 +1,16 @@
+[class^="{{@root.prefix}}"] {
+  display: inline-block;
+  height: {{@root.size}};
+  width: {{@root.size}};
+  line-height: {{@root.size}};
+  vertical-align: text-top;
+  margin-top: 1px;
+}
+{{#each popups}}
+  .{{@root.prefix}}{{class}} {
+    background: svg-load('../simple-icons/icons/{{class}}.svg', fill: {{class}}-color, stroke: #fff) no-repeat center center;
+    background-size:  {{@root.size}}  {{@root.size}};
+    height: {{@root.size}};
+    width: {{@root.size}};
+  }
+{{/each}}

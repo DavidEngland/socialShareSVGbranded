@@ -1,0 +1,45 @@
+{
+  "name": "socialsharesvgbranded",
+  "version": "0.0.1",
+  "description": "Work flow to generate social sharing svg buttons with branding colors",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidEngland/socialShareSVGbranded.git"
+  },
+  "keywords": [
+    "social",
+    "media",
+    "sharing",
+    "svg",
+    "brand",
+    "postcss"
+  ],
+  "author": "Dave England <davidengland@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavidEngland/socialShareSVGbranded/issues"
+  },
+  "homepage": "https://github.com/DavidEngland/socialShareSVGbranded#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.4.2",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-header": "^1.8.8",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-zip": "^4.0.0",
+    "handlebars": "^4.0.10",
+    "postcss": "^6.0.1",
+    "postcss-brand-colors": "^1.0.0",
+    "postcss-inline-svg": "^3.0.0",
+    "postcss-merge-longhand": "^3.0.0",
+    "postcss-ordered-values": "^2.2.3",
+    "postcss-svgo": "^2.1.6",
+    "pump": "^1.0.2"
+  }
+}

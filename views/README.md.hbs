@@ -1,0 +1,30 @@
+# socialShareSVGbranded
+Work flow to generate social sharing svg buttons with branding colors
+
+## Contents
+
+{{#each popups}}
+- [{{name}}](#{{class}})
+{{/each}}
+
+{{#each popups}}
+## {{name}}
+- host:  {{host}}
+- color: {{fill}}
+- Branding Information:  <{{{brand_info}}}>
+- Hover title:  {{preamble}} {{title}}
+- Parameters:
+{{#if pUrl}}  -  URL:  {{{pUrl}}}{{/if}}
+{{#if pTitle}}  -  TITLE:  {{pTitle}}{{/if}}
+{{#if pDesc}} -  DESCRIPTION:  {{pDesc}}{{/if}}
+{{#if pImg}}  -  IMAGE:  {{pImg}}{{/if}}
+{{#if app_id}}  -  APP_ID:  {{app_id}}{{/if}}
+{{#if pHashTags}} -  HASHTAGS:  {{pHashTags}}{{/if}}
+{{#if query}} -  MISC:  {{{query}}}{{/if}}
+
+Example:
+```html
+{{{url}}}
+```
+
+{{/each}}
