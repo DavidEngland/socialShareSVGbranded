@@ -1,6 +1,6 @@
 {
   "name": "socialsharesvgbranded",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Work flow to generate social sharing svg buttons with branding colors",
   "main": "gulpfile.js",
   "scripts": {
@@ -31,6 +31,7 @@
     "gulp-clean-css": "^3.4.2",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-header": "^1.8.8",
+    "gulp-header-comment": "^0.2.0",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
