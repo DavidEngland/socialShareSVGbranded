@@ -1,0 +1,681 @@
+{
+  "popups": [
+    {
+      "name": "Facebook (share dialog)",
+      "title": "Facebook",
+      "class": "facebook",
+      "fill": "#3b5998",
+      "preamble": "Share on",
+      "url": "https://www.facebook.com/dialog/share?app_id={app_id}&display=page&href={url}&redirect_uri={redirect_url}",
+      "protocol": "https:",
+      "host": "www.facebook.com",
+      "pathname": "/dialog/share",
+      "app_id": "app_id",
+      "pUrl": "href",
+      "query": "display=page&redirect_uri=%7Bredirect_url%7D",
+      "brand_info": "https://www.facebookbrand.com",
+      "palette": [
+        "#3b5998"
+      ]
+    },
+    {
+      "name": "Twitter",
+      "title": "Twitter",
+      "class": "twitter",
+      "fill": "#1da1f2",
+      "preamble": "Tweet this on",
+      "url": "https://twitter.com/intent/tweet?url={url}&text={title}&via={via}&hashtags={hashtags}",
+      "protocol": "https:",
+      "host": "twitter.com",
+      "pathname": "/intent/tweet",
+      "pUrl": "url",
+      "pTitle": "text",
+      "pVia": "via",
+      "pHashTags": "hashtags",
+      "query": "",
+      "brand_info": "https://brand.twitter.com",
+      "palette": [
+        "#55acee"
+      ]
+    },
+    {
+      "name": "Google+",
+      "title": "Google+",
+      "class": "googleplus",
+      "fill": "#dc4e41",
+      "preamble": "+1 on",
+      "url": "https://plus.google.com/share?url={url}",
+      "protocol": "https:",
+      "host": "plus.google.com",
+      "pathname": "/share",
+      "pUrl": "url",
+      "query": "",
+      "brand_info": "https://developers.google.com/+/branding-guidelines",
+      "palette": [
+        "#dc4e41"
+      ]
+    },
+    {
+      "name": "Pinterest",
+      "title": "Pinterest",
+      "class": "pinterest",
+      "fill": "#bd081c",
+      "preamble": "Pin it on",
+      "url": "https://pinterest.com/pin/create/bookmarklet/?media={img}&url={url}&is_video=false&description={title}",
+      "protocol": "https:",
+      "host": "pinterest.com",
+      "pathname": "/pin/create/bookmarklet/",
+      "pImg": "media",
+      "pUrl": "url",
+      "pTitle": "description",
+      "query": "is_video=false",
+      "brand_info": "https://business.pinterest.com/en/brand-guidelines",
+      "palette": [
+        "#bd081c"
+      ]
+    },
+    {
+      "name": "Linked In",
+      "title": "LinkedIn",
+      "class": "linkedin",
+      "fill": "#0077b5",
+      "preamble": "Post to",
+      "url": "https://www.linkedin.com/shareArticle?url={url}&title={title}&mini=true",
+      "protocol": "https:",
+      "host": "www.linkedin.com",
+      "pathname": "/shareArticle",
+      "pUrl": "url",
+      "pTitle": "title",
+      "query": "mini=true",
+      "brand_info": "https://brand.linkedin.com",
+      "palette": [
+        "#0077b5",
+        "#000000",
+        "#313335",
+        "#86888a",
+        "#caccce",
+        "#00a0dc",
+        "#8d6cab",
+        "#dd5143",
+        "#e68523"
+      ]
+    },
+    {
+      "name": "Buffer",
+      "title": "Buffer",
+      "class": "buffer",
+      "fill": "#168eea",
+      "preamble": "Queue up on",
+      "url": "https://buffer.com/add?text={title}&url={url}",
+      "protocol": "https:",
+      "host": "buffer.com",
+      "pathname": "/add",
+      "pTitle": "text",
+      "pUrl": "url",
+      "query": "",
+      "brand_info": "https://buffer.com/press",
+      "palette": [
+        "#168eea",
+        "#ee4f4f",
+        "#fff9ea",
+        "#76b852",
+        "#323b43",
+        "#59626a",
+        "#ced7df",
+        "#eff3f6",
+        "#f4f7f9"
+      ]
+    },
+    {
+      "name": "Digg",
+      "title": "Digg",
+      "class": "digg",
+      "fill": "#000000",
+      "preamble": "Submit to",
+      "url": "http://digg.com/submit?url={url}&title={title}",
+      "protocol": "http:",
+      "host": "digg.com",
+      "pathname": "/submit",
+      "pUrl": "url",
+      "pTitle": "title",
+      "query": "",
+      "brand_info": "https://en.wikipedia.org/wiki/Digg",
+      "palette": [
+        "#000000"
+      ]
+    },
+    {
+      "name": "Tumblr",
+      "title": "Tumblr",
+      "class": "tumblr",
+      "fill": "#36465d",
+      "preamble": "Share on",
+      "url": "https://www.tumblr.com/widgets/share/tool?canonicalUrl={url}&title={title}&caption={desc}",
+      "protocol": "https:",
+      "host": "www.tumblr.com",
+      "pathname": "/widgets/share/tool",
+      "pUrl": "canonicalUrl",
+      "pTitle": "title",
+      "pDesc": "caption",
+      "query": "",
+      "brand_info": "https://www.tumblr.com/logo",
+      "palette": [
+        "#35465c"
+      ]
+    },
+    {
+      "name": "Reddit",
+      "title": "Reddit",
+      "class": "reddit",
+      "fill": "#ff4500",
+      "preamble": "Post to",
+      "url": "https://reddit.com/submit?url={url}&title={title}",
+      "protocol": "https:",
+      "host": "reddit.com",
+      "pathname": "/submit",
+      "pUrl": "url",
+      "pTitle": "title",
+      "query": "",
+      "brand_info": "https://worldvectorlogo.com/logo/reddit-2",
+      "palette": [
+        "#ff4500",
+        "#5f99cf",
+        "#cee3f8"
+      ]
+    },
+    {
+      "name": "StumbleUpon",
+      "title": "StumbleUpon",
+      "class": "stumbleupon",
+      "fill": "#eb4924",
+      "preamble": "Post to",
+      "url": "http://www.stumbleupon.com/submit?url={url}&title={title}",
+      "protocol": "http:",
+      "host": "www.stumbleupon.com",
+      "pathname": "/submit",
+      "pUrl": "url",
+      "pTitle": "title",
+      "query": "",
+      "brand_info": "http://corp.stumbleupon.com/press",
+      "palette": [
+        "#eb4924"
+      ]
+    },
+    {
+      "name": "Delicious",
+      "title": "Delicious",
+      "class": "delicious",
+      "fill": "#3399ff",
+      "preamble": "Save this on",
+      "url": "https://delicious.com/save?v=5&provider={provider}&noui&jump=close&url={url}&title={title}",
+      "protocol": "https:",
+      "host": "delicious.com",
+      "pathname": "/save",
+      "pUrl": "url",
+      "pTitle": "title",
+      "query": "v=5&provider=%7Bprovider%7D&noui=&jump=close",
+      "brand_info": "https://en.wikipedia.org/wiki/Delicious_(website)",
+      "palette": [
+        "#3399ff",
+        "#222222",
+        "#eeeeee"
+      ]
+    },
+    {
+      "name": "Delicious",
+      "title": "Delicious",
+      "class": "delicious",
+      "fill": "#3399ff",
+      "preamble": "Save this on",
+      "url": "http://delicious.com/save?url={url}&title={title}",
+      "protocol": "http:",
+      "host": "delicious.com",
+      "pathname": "/save",
+      "pUrl": "url",
+      "pTitle": "title",
+      "query": "",
+      "brand_info": "https://en.wikipedia.org/wiki/Delicious_(website)",
+      "palette": [
+        "#3399ff",
+        "#222222",
+        "#eeeeee"
+      ]
+    },
+    {
+      "name": "Blogger",
+      "title": "Blogger",
+      "class": "blogger",
+      "fill": "#f38936",
+      "preamble": "Share on",
+      "url": "https://www.blogger.com/blog-this.g?u={url}&n={title}&t={desc}",
+      "protocol": "https:",
+      "host": "www.blogger.com",
+      "pathname": "/blog-this.g",
+      "pUrl": "u",
+      "pTitle": "n",
+      "pDesc": "t",
+      "query": "",
+      "brand_info": "https://www.blogger.com",
+      "palette": [
+        "#f57d00"
+      ]
+    },
+    {
+      "name": "LiveJournal",
+      "title": "LiveJournal",
+      "class": "livejournal",
+      "fill": "#00b0ea",
+      "preamble": "Share on",
+      "url": "http://www.livejournal.com/update.bml?subject={title}&event={url}",
+      "protocol": "http:",
+      "host": "www.livejournal.com",
+      "pathname": "/update.bml",
+      "pTitle": "subject",
+      "pUrl": "event",
+      "query": "",
+      "brand_info": "http://www.livejournal.com",
+      "palette": []
+    },
+    {
+      "name": "Facebook Messenger",
+      "title": "Messenger",
+      "class": "messenger",
+      "fill": "#0084ff",
+      "preamble": "Send via",
+      "url": "fb-messenger://share?link={url}&app_id={app_id}",
+      "protocol": "fb-messenger:",
+      "host": "share",
+      "pathname": null,
+      "pUrl": "link",
+      "app_id": "app_id",
+      "query": "",
+      "brand_info": "https://worldvectorlogo.com/logo/facebook-messenger",
+      "palette": []
+    },
+    {
+      "name": "MySpace",
+      "title": "Myspace",
+      "class": "myspace",
+      "fill": "#030303",
+      "preamble": "Share on",
+      "url": "https://myspace.com/post?u={url}&t={title}&c={desc}",
+      "protocol": "https:",
+      "host": "myspace.com",
+      "pathname": "/post",
+      "pUrl": "u",
+      "pTitle": "t",
+      "pDesc": "c",
+      "query": "",
+      "brand_info": "https://myspace.com/pressroom/assetslogos",
+      "palette": [
+        "#000000"
+      ]
+    },
+    {
+      "name": "Yahoo",
+      "title": "Yahoo!",
+      "class": "yahoo",
+      "fill": "#440099",
+      "preamble": "Share on",
+      "url": "http://compose.mail.yahoo.com/?body={url}",
+      "protocol": "http:",
+      "host": "compose.mail.yahoo.com",
+      "pathname": "/",
+      "pUrl": "body",
+      "query": "",
+      "brand_info": "https://en.wikipedia.org/wiki/Yahoo!",
+      "palette": [
+        "#410093"
+      ]
+    },
+    {
+      "name": "Hacker News",
+      "title": "Y Combinator",
+      "class": "ycombinator",
+      "fill": "#f0652f",
+      "preamble": "Share on",
+      "url": "http://news.ycombinator.com/submitlink?u={url}&t={title}",
+      "protocol": "http:",
+      "host": "news.ycombinator.com",
+      "pathname": "/submitlink",
+      "pUrl": "u",
+      "pTitle": "t",
+      "query": "",
+      "brand_info": "https://www.ycombinator.com/press/",
+      "palette": []
+    },
+    {
+      "name": "NewsVine",
+      "title": "NewsVine",
+      "class": "newsvine",
+      "fill": "#116600",
+      "preamble": "Share on",
+      "url": "http://www.newsvine.com/_tools/seed&save?u={url}",
+      "protocol": "http:",
+      "host": "www.newsvine.com",
+      "pathname": "/_tools/seed&save",
+      "pUrl": "u",
+      "query": "",
+      "brand_info": "https://www.newsvine.com/_tps/about/code",
+      "palette": []
+    },
+    {
+      "name": "EverNote",
+      "title": "Evernote",
+      "class": "evernote",
+      "fill": "#2dbe60",
+      "preamble": "Share on",
+      "url": "http://www.evernote.com/clip.action?url={url}",
+      "protocol": "http:",
+      "host": "www.evernote.com",
+      "pathname": "/clip.action",
+      "pUrl": "url",
+      "query": "",
+      "brand_info": "https://evernote.com/brand/color-palette/",
+      "palette": [
+        "#7ac142",
+        "#808084"
+      ]
+    },
+    {
+      "name": "GetPocket",
+      "title": "Pocket",
+      "class": "pocket",
+      "fill": "#ef3f56",
+      "preamble": "Pocket",
+      "url": "https://getpocket.com/save?url={url}&title={title}",
+      "protocol": "https:",
+      "host": "getpocket.com",
+      "pathname": "/save",
+      "pUrl": "url",
+      "pTitle": "title",
+      "query": "",
+      "brand_info": "https://getpocket.com/blog/press/",
+      "palette": [
+        "#ef4056",
+        "#50bcb6"
+      ]
+    },
+    {
+      "name": "FlipBoard",
+      "title": "Flipboard",
+      "class": "flipboard",
+      "fill": "#e12828",
+      "preamble": "Share on",
+      "url": "https://share.flipboard.com/bookmarklet/popout?v=2&title={title}&url={url}",
+      "protocol": "https:",
+      "host": "share.flipboard.com",
+      "pathname": "/bookmarklet/popout",
+      "pTitle": "title",
+      "pUrl": "url",
+      "query": "v=2",
+      "brand_info": "https://about.flipboard.com/brand-guidelines",
+      "palette": [
+        "#e12828"
+      ]
+    },
+    {
+      "name": "InstaPaper",
+      "title": "Instapaper",
+      "class": "instapaper",
+      "fill": "#1f1f1f",
+      "preamble": "Share on",
+      "url": "http://www.instapaper.com/edit?url={url}&title={title}&description={desc}",
+      "protocol": "http:",
+      "host": "www.instapaper.com",
+      "pathname": "/edit",
+      "pUrl": "url",
+      "pTitle": "title",
+      "pDesc": "description",
+      "query": "",
+      "brand_info": "",
+      "palette": [
+        "#000000",
+        "#428bca"
+      ]
+    },
+    {
+      "name": "Slashdot",
+      "title": "Slashdot",
+      "class": "slashdot",
+      "fill": "#026664",
+      "preamble": "Share on",
+      "url": "http://slashdot.org/bookmark.pl?url={url}&title={title}",
+      "protocol": "http:",
+      "host": "slashdot.org",
+      "pathname": "/bookmark.pl",
+      "pUrl": "url",
+      "pTitle": "title",
+      "query": "",
+      "brand_info": "https://commons.wikimedia.org/wiki/File:Slashdot_wordmark_and_logo.svg",
+      "palette": []
+    },
+    {
+      "name": "LineMe",
+      "title": "Line",
+      "class": "line",
+      "fill": "#00c300",
+      "preamble": "LINE",
+      "url": "http://line.me/R/msg/text?{url}",
+      "protocol": "http:",
+      "host": "line.me",
+      "pathname": "/R/msg/text",
+      "query": "%7Burl%7D=",
+      "brand_info": "http://line.me/en/logo",
+      "palette": [
+        "#00c300",
+        "#1885bf",
+        "#e0001b",
+        "#0066a1"
+      ]
+    },
+    {
+      "name": "Skype",
+      "title": "Skype",
+      "class": "skype",
+      "fill": "#00aff0",
+      "preamble": "Share on",
+      "url": "https://web.skype.com/share?url={url}",
+      "protocol": "https:",
+      "host": "web.skype.com",
+      "pathname": "/share",
+      "pUrl": "url",
+      "query": "",
+      "brand_info": "http://blogs.skype.com/?attachment_id=56273",
+      "palette": [
+        "#00aff0"
+      ]
+    },
+    {
+      "name": "Viber",
+      "title": "Viber",
+      "class": "viber",
+      "fill": "#7c529e",
+      "preamble": "Share on",
+      "url": "viber://forward?text={url}",
+      "protocol": "viber:",
+      "host": "forward",
+      "pathname": null,
+      "pUrl": "text",
+      "query": "",
+      "brand_info": "http://www.viber.com/en/media-kit",
+      "palette": []
+    },
+    {
+      "name": "WhatsApp",
+      "title": "WhatsApp",
+      "class": "whatsapp",
+      "fill": "#25d366",
+      "preamble": "Share on",
+      "url": "whatsapp://send?text={url}",
+      "protocol": "whatsapp:",
+      "host": "send",
+      "pathname": null,
+      "pUrl": "text",
+      "query": "",
+      "brand_info": "https://www.whatsappbrand.com",
+      "palette": [
+        "#25d366"
+      ]
+    },
+    {
+      "name": "Telegram.me",
+      "title": "Telegram",
+      "class": "telegram",
+      "fill": "#2ca5e0",
+      "preamble": "Share on",
+      "url": "https://telegram.me/share/url?url={url}&text={title}",
+      "protocol": "https:",
+      "host": "telegram.me",
+      "pathname": "/share/url",
+      "pUrl": "url",
+      "pTitle": "text",
+      "query": "",
+      "brand_info": "https://commons.wikimedia.org/wiki/File:Telegram_alternative_logo.svg",
+      "palette": [
+        "#0088cc"
+      ]
+    },
+    {
+      "name": "Vkontakte",
+      "title": "VK",
+      "class": "vk",
+      "fill": "#6383a8",
+      "preamble": "Share on",
+      "url": "http://vk.com/share.php?url={url}&title={title}&description={desc}&image={img}",
+      "protocol": "http:",
+      "host": "vk.com",
+      "pathname": "/share.php",
+      "pUrl": "url",
+      "pTitle": "title",
+      "pDesc": "description",
+      "pImg": "image",
+      "query": "",
+      "brand_info": "https://vk.com/about",
+      "palette": [
+        "#45668e"
+      ]
+    },
+    {
+      "name": "OK.ru",
+      "title": "Odnoklassniki",
+      "class": "odnoklassniki",
+      "fill": "#f4731c",
+      "preamble": "Share on",
+      "url": "https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl={url}&title={title}",
+      "protocol": "https:",
+      "host": "connect.ok.ru",
+      "pathname": "/dk",
+      "pUrl": "st.shareUrl",
+      "pTitle": "title",
+      "query": "st.cmd=WidgetSharePreview",
+      "brand_info": "http://v.ok.ru/logo.html",
+      "palette": [
+        "#ed812b"
+      ]
+    },
+    {
+      "name": "Douban",
+      "title": "Douban",
+      "class": "douban",
+      "fill": "#007711",
+      "preamble": "Share on",
+      "url": "http://www.douban.com/recommend/?url={url}&title={title}",
+      "protocol": "http:",
+      "host": "www.douban.com",
+      "pathname": "/recommend/",
+      "pUrl": "url",
+      "pTitle": "title",
+      "query": "",
+      "brand_info": "https://www.douban.com/about?link=2us",
+      "palette": []
+    },
+    {
+      "name": "E-mail",
+      "title": "E-mail",
+      "class": "email",
+      "fill": "#0166ff",
+      "preamble": "Send via",
+      "url": "mailto:{someone@example.com}?subject={title}&body={url}",
+      "protocol": "mailto:",
+      "host": "example.com",
+      "pathname": "%7D",
+      "pTitle": "subject",
+      "pUrl": "body",
+      "query": "",
+      "brand_info": "http://www.email.com",
+      "palette": []
+    },
+    {
+      "name": "Baidu",
+      "title": "Baidu",
+      "class": "baidu",
+      "fill": "#2319dc",
+      "preamble": "Share on",
+      "url": "http://cang.baidu.com/do/add?it={title}&iu={url}",
+      "protocol": "http:",
+      "host": "cang.baidu.com",
+      "pathname": "/do/add",
+      "pTitle": "it",
+      "pUrl": "iu",
+      "query": "",
+      "brand_info": "https://en.wikipedia.org/wiki/File:Baidu.svg",
+      "palette": [
+        "#de0f17",
+        "#2529d8"
+      ]
+    },
+    {
+      "name": "Xing",
+      "title": "Xing",
+      "class": "xing",
+      "fill": "#005a5f",
+      "preamble": "Share on",
+      "url": "https://www.xing.com/app/user?op=share&url={url}",
+      "protocol": "https:",
+      "host": "www.xing.com",
+      "pathname": "/app/user",
+      "pUrl": "url",
+      "query": "op=share",
+      "brand_info": "https://worldvectorlogo.com/logo/xing-icon",
+      "palette": [
+        "#026466",
+        "#cfdc00"
+      ]
+    },
+    {
+      "name": "RenRen",
+      "title": "Ren Ren",
+      "class": "renren",
+      "fill": "#005eac",
+      "preamble": "Share on",
+      "url": "http://widget.renren.com/dialog/share?resourceUrl={url}&srcUrl={url}&title={title}",
+      "protocol": "http:",
+      "host": "widget.renren.com",
+      "pathname": "/dialog/share",
+      "pUrl": "srcUrl",
+      "pTitle": "title",
+      "query": "",
+      "brand_info": "https://en.wikipedia.org/wiki/Renren#/media/File:Renren.png",
+      "palette": []
+    },
+    {
+      "name": "Weibo",
+      "title": "Sina Weibo",
+      "class": "sinaweibo",
+      "fill": "#e6162d",
+      "preamble": "Share on",
+      "url": "http://service.weibo.com/share/share.php?url={url}&appkey=&title={title}&pic=&ralateUid=",
+      "protocol": "http:",
+      "host": "service.weibo.com",
+      "pathname": "/share/share.php",
+      "pUrl": "url",
+      "pTitle": "title",
+      "query": "appkey=&pic=&ralateUid=",
+      "brand_info": "https://en.wikipedia.org/wiki/Sina_Weibo",
+      "palette": [
+        "#e71d34"
+      ]
+    }
+  ]
+}
